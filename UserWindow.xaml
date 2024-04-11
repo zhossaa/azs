@@ -1,0 +1,17 @@
+﻿<Window x:Class="azs.UserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:azs"
+        mc:Ignorable="d"
+        Title="UserWindow" Height="450" Width="800">
+    <Grid Background="#FF6BDAE2">
+        <Image Source="/free-icon-fuel-1505581.png" Margin="-42,10,433,300"/>
+        <TextBox x:Name="stoika" TextWrapping="Wrap" Text="Стойка" Margin="10,139,477,250"/>
+        <TextBox x:Name="benzin" HorizontalAlignment="Left" Margin="10,194,0,194" TextWrapping="Wrap" Text="Бензин" Width="313"/>
+        <Button x:Name="add" Content="Добавить" Margin="10,266,477,117" Click="add_click"/>
+        <Button x:Name="refresh" Content="Обновить" Margin="10,322,477,61" Click="refresh_click"/>
+        <DataGrid x:Name="user" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="328,0,0,0" Loaded="user_Loaded"/>
+    </Grid>
+</Window>
